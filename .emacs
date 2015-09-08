@@ -7,9 +7,11 @@
 (package-initialize)
 
 ;use evil
+(setq evil-toggle-key "C-c m")
 (require 'evil)
 (evil-mode 1)
 
+;color theme, use solarized
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'solarized t)
 
@@ -26,17 +28,10 @@
        "Face for displaying leading zeroes for line numbers in display margin."
        :group 'linum)
 
-;     (defun linum-format-func (line)
-;       (let ((w (length
-;                 (number-to-string (count-lines (point-min) (point-max))))))
-;         (concat
-;          (propertize (make-string (- w (length (number-to-string line))) ?0)
-;                      'face 'linum-leading-zero)
-;          (propertize (number-to-string line) 'face 'linum))))
-;
-;     (setq linum-format 'linum-format-func)))
-
       (defun linum-format-func (line)
         (let ((w (length (number-to-string (count-lines (point-min) (point-max))))))
           (propertize (format (format "%%%dd " w) line) 'face 'linum)))
       (setq linum-format 'linum-format-func)))
+
+;magit      
+(global-set-key (kbd "C-x g") 'magit-status)
