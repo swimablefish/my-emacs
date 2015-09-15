@@ -66,3 +66,10 @@
 (setq org-mobile-inbox-for-pull "~/Documents/org/todo.org")
 ;; Set to <your Dropbox root directory>/MobileOrg.
 (setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
+
+(add-hook 'after-init-hook 'global-company-mode)
+(eval-after-load "company"
+  '(progn
+     (add-to-list 'company-backends 'company-anaconda)))
+(add-hook 'python-mode-hook 'anaconda-mode)
+(add-hook 'python-mode-hook 'eldoc-mode)
