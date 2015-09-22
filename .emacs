@@ -73,3 +73,12 @@
      (add-to-list 'company-backends 'company-anaconda)))
 (add-hook 'python-mode-hook 'anaconda-mode)
 (add-hook 'python-mode-hook 'eldoc-mode)
+
+;;enable pgp
+(require 'epa-file)
+
+;;set picture width
+(setq org-image-actual-width '(300)) 
+
+;; ipython notebook
+(require 'ein)
