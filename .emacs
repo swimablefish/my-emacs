@@ -82,3 +82,7 @@
 
 ;; ipython notebook
 (require 'ein)
+
+;;rainbow
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+(require 'rainbow-blocks)
