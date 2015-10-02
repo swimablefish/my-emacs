@@ -83,6 +83,13 @@
 ;; ipython notebook
 (require 'ein)
 
+;;cider
+(add-hook 'cider-mode-hook #'eldoc-mode)
+(setq cider-auto-mode nil)
+(add-hook 'cider-repl-mode-hook #'smartparens-strict-mode)
+(add-hook 'clojure-mode-hook #'smartparens-strict-mode)
+
 ;;rainbow
-(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-(require 'rainbow-blocks)
+(add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
+(add-hook 'cider-repl-mode-hook #'rainbow-delimiters-mode)
+
