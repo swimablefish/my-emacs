@@ -56,6 +56,20 @@
     ("j" "Journal" entry (file+datetree "~/Documents/org/journal.org")
     "* %?\nEntered on %U\n %i\n %a")))
 
+(org-babel-do-load-languages
+  'org-babel-load-languages
+   '((python . t)
+     (sh . t)
+     (R . t)
+     (ruby . t)
+     (ditaa . t)
+     (dot . t)
+     (octave . t)
+     (sqlite . t)
+     (latex . t)
+     (clojure . t)
+     (perl . t)))
+
 ;;org-pomodoro  
 ;;play tick sound
 (setq org-pomodoro-ticking-sound-p t)
@@ -89,7 +103,22 @@
 (add-hook 'cider-repl-mode-hook #'smartparens-strict-mode)
 (add-hook 'clojure-mode-hook #'smartparens-strict-mode)
 
+(add-hook 'cider-mode-hook
+ '(lambda () (add-hook 'after-save-hook
+         '(lambda ()
+             (if (and (boundp 'cider-mode) cider-mode)
+              (cider-namespace-refresh))))))
+ 
+(defun cider-namespace-refresh ()
+  (interactive)
+  (cider-interactive-eval
+   "(require 'clojure.tools.namespace.repl)
+   (clojure.tools.namespace.repl/refresh)"))
+
 ;;rainbow
 (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
 (add-hook 'cider-repl-mode-hook #'rainbow-delimiters-mode)
 
+;;for pdflatex
+;(setenv "PATH" (concat "/Library/TeX/texbin" ":" (getenv "PATH")))
+(setq exec-path (append exec-path '("/Library/TeX/texbin")))
