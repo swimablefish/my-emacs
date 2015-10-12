@@ -119,6 +119,8 @@
 (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
 (add-hook 'cider-repl-mode-hook #'rainbow-delimiters-mode)
 
-;;for pdflatex
+;;for latex
 ;(setenv "PATH" (concat "/Library/TeX/texbin" ":" (getenv "PATH")))
-(setq exec-path (append exec-path '("/Library/TeX/texbin")))
+(setenv "PATH" (concat "/Library/TeX/texbin:/usr/local/bin:" 
+               (getenv "PATH")))
+(setq preview-gs-command "/usr/local/bin/gs")
