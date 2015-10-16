@@ -87,6 +87,17 @@
      (add-to-list 'company-backends 'company-anaconda)))
 (add-hook 'python-mode-hook 'anaconda-mode)
 (add-hook 'python-mode-hook 'eldoc-mode)
+(setq
+  python-shell-interpreter "ipython"
+  python-shell-interpreter-args "--pylab"
+  python-shell-prompt-regexp "In \\[[0-9]+\\]: "
+  python-shell-prompt-output-regexp "Out\\[[0-9]+\\]: "
+  python-shell-completion-setup-code
+  "from IPython.core.completerlib import module_completion"
+  python-shell-completion-module-string-code
+  "';'.join(module_completion('''%s'''))\n"
+  python-shell-completion-string-code
+  "';'.join(get_ipython().Completer.all_completions('''%s'''))\n")
 
 ;;enable pgp
 (require 'epa-file)
@@ -124,3 +135,6 @@
 (setenv "PATH" (concat "/Library/TeX/texbin:/usr/local/bin:" 
                (getenv "PATH")))
 (setq preview-gs-command "/usr/local/bin/gs")
+
+;; gradle
+(require 'gradle-mode)
