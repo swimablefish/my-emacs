@@ -7,7 +7,13 @@
 (package-initialize)
 
 (setq inhibit-startup-message t)
-
+(setq initial-frame-alist (quote ((fullscreen . maximized))))
+(add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
+;; highlight the line
+(global-hl-line-mode 1)
+;; close auto save
+(setq auto-save-default nil)
+(global-auto-revert-mode 1)
 
 ;;use evil
 (setq evil-want-C-i-jump nil)  ;for in org-mode TAB doesn't work
@@ -160,3 +166,11 @@
 ;;yml or yaml
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
+
+(require 'evil-surround)
+(global-evil-surround-mode)
+(evilnc-default-hotkeys)
+(define-key evil-normal-state-map (kbd ",/") 'evilnc-comment-or-uncomment-lines)
+(define-key evil-visual-state-map (kbd ",/") 'evilnc-comment-or-uncomment-lines)
+
+(which-key-mode 1)
