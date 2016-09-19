@@ -1,0 +1,46 @@
+;; Object services/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "services/"
+  :tables
+  (list
+    (semanticdb-table "QueryCountService.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.visenze.querymonitor.services" package nil nil [1 43])
+            ("com.visenze.querymonitor.helpers.Helper" include nil nil [45 92])
+            ("com.visenze.querymonitor.mappers.DBMapper" include nil nil [93 142])
+            ("com.visenze.querymonitor.mappers.QueryCountMapper" include nil nil [143 200])
+            ("com.visenze.querymonitor.models.FilterPojo" include nil nil [201 251])
+            ("org.joda.time.DateTime" include nil nil [252 282])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [283 345])
+            ("org.springframework.stereotype.Component" include nil nil [346 394])
+            ("java.sql.SQLException" include nil nil [396 425])
+            ("QueryCountService" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("countAllQueriesByFilter" function
+                       (:throws ("SQLException" "ClassNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("idCurrent" variable (:type "long") (reparse-symbol formal_parameters) [662 676])
+                            ("filter" variable (:type "FilterPojo") (reparse-symbol formal_parameters) [690 707]))                          
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [610 1257])
+                    ("countRecentQueriesByFilter" function
+                       (:throws ("SQLException" "ClassNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("idCurrent" variable (:type "long") (reparse-symbol formal_parameters) [1318 1332])
+                            ("filter" variable (:type "FilterPojo") (reparse-symbol formal_parameters) [1346 1363]))                          
+                        :type "Integer")
+                        (reparse-symbol class_member_declaration) [1263 1911]))                  
+                :type "class")
+                nil [479 1913]))          
+      :file "QueryCountService.java"
+      :pointmax 1914
+      :fsize 1913
+      :lastmodtime '(22175 3291 0 0)
+      :unmatched-syntax '((IDENTIFIER 595 . 603) (SEMICOLON 603 . 604) (IDENTIFIER 516 . 526) (IDENTIFIER 548 . 564) (SEMICOLON 564 . 565) (IDENTIFIER 468 . 478))))
+  :file "!Users!jinyu!code!visenze-analysis-pipeline!query-monitor-web!src!main!java!com!visenze!querymonitor!services!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

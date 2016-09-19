@@ -1,0 +1,53 @@
+;; Object bootstrap/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bootstrap/"
+  :tables
+  (list
+    (semanticdb-table "Worker.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.visenze.dashboard.bootstrap" package nil nil [1 41])
+            ("com.visenze.dashboard.data.mysql.dao.AccountDao" include nil nil [43 98])
+            ("com.visenze.dashboard.data.mysql.entity.Account" include nil nil [99 154])
+            ("com.weardex.bazooka.module.email.EmailSystemModuleFactory" include nil nil [155 220])
+            ("com.weardex.bazooka.module.payment.PaymentModuleFactory" include nil nil [221 284])
+            ("com.weardex.bazooka.module.usage.UsageModuleFactory" include nil nil [285 344])
+            ("com.weardex.bazooka.module.webhook.WebhookModuleFactory" include nil nil [345 408])
+            ("org.springframework.beans.factory.config.BeanDefinition" include nil nil [409 472])
+            ("org.springframework.context.ApplicationContext" include nil nil [473 527])
+            ("org.springframework.context.support.ClassPathXmlApplicationContext" include nil nil [528 602])
+            ("java.io.IOException" include nil nil [604 631])
+            ("java.util.Arrays" include nil nil [632 656])
+            ("java.util.Set" include nil nil [657 678])
+            ("Worker" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("applicationContext" variable
+                       (:typemodifiers ("private")
+                        :type "ApplicationContext")
+                        (reparse-symbol class_member_declaration) [745 792])
+                    ("main" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [820 839]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [796 892])
+                    ("start" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [897 1625]))                  
+                :type "class")
+                nil [721 1627]))          
+      :file "Worker.java"
+      :pointmax 1628
+      :fsize 1627
+      :lastmodtime '(22072 5231 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!jinyu!code!weardex-app-bazooka!src!main!java!com!visenze!dashboard!bootstrap!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

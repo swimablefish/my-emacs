@@ -1,0 +1,76 @@
+;; Object http/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "http/"
+  :tables
+  (list
+    (semanticdb-table "HttpHelperTest.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.weardex.bazooka.utils.http" package nil nil [1 40])
+            ("com.weardex.bazooka.client.AdminParameters" include nil nil [42 92])
+            ("org.apache.http.NameValuePair" include nil nil [93 130])
+            ("org.apache.http.client.entity.EntityBuilder" include nil nil [131 182])
+            ("org.apache.http.impl.client.CloseableHttpClient" include nil nil [183 238])
+            ("org.apache.http.impl.client.HttpClients" include nil nil [239 286])
+            ("org.apache.http.message.BasicNameValuePair" include nil nil [287 337])
+            ("org.junit.Test" include nil nil [338 360])
+            ("org.junit.runner.RunWith" include nil nil [361 393])
+            ("org.mockito.Mock" include nil nil [394 418])
+            ("org.powermock.modules.junit4.PowerMockRunner" include nil nil [419 471])
+            ("java.util.ArrayList" include nil nil [473 500])
+            ("java.util.HashMap" include nil nil [501 526])
+            ("java.util.List" include nil nil [527 549])
+            ("java.util.Map" include nil nil [550 571])
+            ("HttpHelperTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("accessKey" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [679 712])
+                    ("secretKey" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [715 748])
+                    ("url" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [751 794])
+                    ("httpClients" variable
+                       (:typemodifiers ("private")
+                        :type "HttpClients")
+                        (reparse-symbol class_member_declaration) [806 838])
+                    ("closeableHttpClient" variable
+                       (:typemodifiers ("private")
+                        :type "CloseableHttpClient")
+                        (reparse-symbol class_member_declaration) [850 898])
+                    ("testDoPostRequest1" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [910 1257])
+                    ("testDoPostRequest2" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1269 1854])
+                    ("testDoGetRequest1" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1866 2076])
+                    ("testDoGetRequest2" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2088 2671]))                  
+                :type "class")
+                nil [646 2673]))          
+      :file "HttpHelperTest.java"
+      :pointmax 2674
+      :fsize 2673
+      :lastmodtime '(22313 36305 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!jinyu!code!weardex-app-bazooka!src!test!java!com!weardex!bazooka!utils!http!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

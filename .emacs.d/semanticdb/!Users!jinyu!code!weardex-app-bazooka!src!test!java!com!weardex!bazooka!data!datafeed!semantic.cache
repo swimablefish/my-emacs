@@ -1,0 +1,48 @@
+;; Object datafeed/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "datafeed/"
+  :tables
+  (list
+    (semanticdb-table "DatafeedParserFactoryTest.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.weardex.bazooka.data.datafeed" package nil nil [1 43])
+            ("com.weardex.bazooka.data.datafeed.impl.CsvParser" include nil nil [45 101])
+            ("org.hamcrest.Matcher" include nil nil [102 130])
+            ("org.hamcrest.core.Is" include nil nil [131 159])
+            ("org.junit.Rule" include nil nil [160 182])
+            ("org.junit.Test" include nil nil [183 205])
+            ("org.junit.rules.ExpectedException" include nil nil [206 247])
+            ("org.mockito.Mockito" include nil nil [248 275])
+            ("java.io.InputStream" include nil nil [277 304])
+            ("DatafeedParserFactoryTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("datafeedParserFactory" variable
+                       (:typemodifiers ("private")
+                        :type "DatafeedParserFactory")
+                        (reparse-symbol class_member_declaration) [516 568])
+                    ("thrown" variable
+                       (:typemodifiers ("public")
+                        :type "ExpectedException")
+                        (reparse-symbol class_member_declaration) [580 639])
+                    ("testGetDatafeedParserShouldThrowRunTimeException" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [651 945])
+                    ("testGetDatafeedParserByFormat" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [957 1523]))                  
+                :type "class")
+                nil [472 1525]))          
+      :file "DatafeedParserFactoryTest.java"
+      :pointmax 1526
+      :fsize 1525
+      :lastmodtime '(22084 16029 0 0)
+      :unmatched-syntax '((MULT 426 . 427) (DOT 425 . 426) (IDENTIFIER 419 . 425) (DOT 418 . 419) (IDENTIFIER 413 . 418) (DOT 412 . 413) (IMPORT 395 . 401) (STATIC 402 . 408) (IDENTIFIER 409 . 412) (IDENTIFIER 384 . 393) (DOT 383 . 384) (IDENTIFIER 377 . 383) (DOT 376 . 377) (IDENTIFIER 372 . 376) (DOT 371 . 372) (IDENTIFIER 363 . 371) (DOT 362 . 363) (IMPORT 345 . 351) (STATIC 352 . 358) (IDENTIFIER 359 . 362) (IDENTIFIER 341 . 343) (DOT 340 . 341) (IDENTIFIER 338 . 340) (DOT 337 . 338) (IDENTIFIER 333 . 337) (DOT 332 . 333) (IDENTIFIER 324 . 332) (DOT 323 . 324) (IMPORT 306 . 312) (STATIC 313 . 319) (IDENTIFIER 320 . 323))))
+  :file "!Users!jinyu!code!weardex-app-bazooka!src!test!java!com!weardex!bazooka!data!datafeed!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

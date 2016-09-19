@@ -1,0 +1,109 @@
+;; Object billing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "billing/"
+  :tables
+  (list
+    (semanticdb-table "BillingUsageServiceTest.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.visenze.dashboard.billing" package nil nil [1 39])
+            ("com.google.common.collect.Lists" include nil nil [41 80])
+            ("com.visenze.client.chargeover.resource.*" include nil nil [81 129])
+            ("com.visenze.client.chargeover.resource.Package" include nil nil [130 184])
+            ("com.visenze.dashboard.data.mysql.dao.PlanItemDao" include nil nil [185 241])
+            ("com.visenze.dashboard.data.mysql.dao.PlanSubscriptionDao" include nil nil [242 306])
+            ("com.visenze.dashboard.data.mysql.dao.StatsCountDao" include nil nil [307 365])
+            ("com.visenze.dashboard.data.mysql.entity.*" include nil nil [366 415])
+            ("org.junit.Before" include nil nil [416 440])
+            ("org.junit.Test" include nil nil [441 463])
+            ("org.junit.runner.RunWith" include nil nil [464 496])
+            ("org.mockito.InjectMocks" include nil nil [497 528])
+            ("org.mockito.Mock" include nil nil [529 553])
+            ("org.mockito.Mockito" include nil nil [554 581])
+            ("org.powermock.modules.junit4.PowerMockRunner" include nil nil [582 634])
+            ("java.util.Date" include nil nil [636 658])
+            ("java.util.List" include nil nil [659 681])
+            ("BillingUsageServiceTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("testAccount" variable
+                       (:typemodifiers ("private")
+                        :type "Account")
+                        (reparse-symbol class_member_declaration) [1174 1202])
+                    ("testPlan" variable
+                       (:typemodifiers ("private")
+                        :type "PlanSubscription")
+                        (reparse-symbol class_member_declaration) [1205 1239])
+                    ("testProduct" variable
+                       (:typemodifiers ("private")
+                        :type "PlanProduct")
+                        (reparse-symbol class_member_declaration) [1242 1274])
+                    ("usages" variable
+                       (:typemodifiers ("private")
+                        :type "Usages")
+                        (reparse-symbol class_member_declaration) [1277 1299])
+                    ("p" variable
+                       (:typemodifiers ("private")
+                        :type "Package")
+                        (reparse-symbol class_member_declaration) [1302 1320])
+                    ("jsonRequest" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1402 2413])
+                    ("imageLimit" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2417 2447])
+                    ("setUp" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2461 3278])
+                    ("testParseRequestJsonAPIUnit" function
+                       (:throws ("BillingUsageService.BillingUsageException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3290 4323])
+                    ("testParseRequestJsonImageUnit" function
+                       (:throws ("BillingUsageService.BillingUsageException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4335 5426])
+                    ("testParseRequestJsonOverageUnitBelowLimit" function
+                       (:throws ("BillingUsageService.BillingUsageException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5438 6522])
+                    ("testParseRequestJsonOverageUnitAboveLimit" function
+                       (:throws ("BillingUsageService.BillingUsageException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6534 7683])
+                    ("testParseRequestJsonUnitUnitBelowLimit" function
+                       (:throws ("BillingUsageService.BillingUsageException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7695 9139])
+                    ("testParseRequestJsonUnitUnitAboveLimit" function
+                       (:throws ("BillingUsageService.BillingUsageException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9151 10590])
+                    ("testParseRequestJsonOverageUnitUnit" function
+                       (:throws ("BillingUsageService.BillingUsageException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10602 12047])
+                    ("testParseRequestJsonException" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12119 13613]))                  
+                :type "class")
+                nil [900 13615]))          
+      :file "BillingUsageServiceTest.java"
+      :pointmax 13616
+      :fsize 13615
+      :lastmodtime '(22099 55316 0 0)
+      :unmatched-syntax '((CLASS 12110 . 12115) (IDENTIFIER 12057 . 12065) (EQ 12066 . 12067) (SEMICOLON 1397 . 1398) (GT 1383 . 1384) (LT 1374 . 1375) (SEMICOLON 1358 . 1359) (GT 1344 . 1345) (PRIVATE 1323 . 1330) (LT 1335 . 1336) (IDENTIFIER 1156 . 1169) (SEMICOLON 1169 . 1170) (IDENTIFIER 1110 . 1129) (SEMICOLON 1129 . 1130) (IDENTIFIER 1066 . 1077) (SEMICOLON 1077 . 1078) (IDENTIFIER 1025 . 1041) (SEMICOLON 1041 . 1042) (IDENTIFIER 941 . 953) (IDENTIFIER 976 . 995) (SEMICOLON 995 . 996) (PAREN_BLOCK 876 . 899) (IDENTIFIER 868 . 876) (IDENTIFIER 819 . 823) (DOT 818 . 819) (IDENTIFIER 806 . 818) (DOT 805 . 806) (IDENTIFIER 798 . 805) (DOT 797 . 798) (IDENTIFIER 794 . 797) (DOT 793 . 794) (IDENTIFIER 784 . 793) (DOT 783 . 784) (IMPORT 766 . 772) (STATIC 773 . 779) (IDENTIFIER 780 . 783) (MULT 763 . 764) (DOT 762 . 763) (IDENTIFIER 754 . 762) (DOT 753 . 754) (IDENTIFIER 746 . 753) (DOT 745 . 746) (IMPORT 728 . 734) (STATIC 735 . 741) (IDENTIFIER 742 . 745) (IDENTIFIER 714 . 726) (DOT 713 . 714) (IDENTIFIER 707 . 713) (DOT 706 . 707) (IDENTIFIER 701 . 706) (DOT 700 . 701) (IMPORT 683 . 689) (STATIC 690 . 696) (IDENTIFIER 697 . 700))))
+  :file "!Users!jinyu!code!weardex-app-bazooka!src!test!java!com!visenze!dashboard!billing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

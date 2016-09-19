@@ -1,0 +1,13 @@
+ls
+ls
+rm 你的孤独，虽败犹荣.mobi 
+ls
+rm .mobi
+rm *.mobi
+ls
+rm vagrant_1.8.1_x86_64.deb 
+rm vagrant_1.8.1_x86_64\ \(1\).deb
+ls
+rm jdk*
+ls
+exit

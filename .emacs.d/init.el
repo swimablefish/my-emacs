@@ -6,6 +6,9 @@
        package-archives)
 (package-initialize)
 
+(setq inhibit-startup-message t)
+
+
 ;;use evil
 (setq evil-want-C-i-jump nil)  ;for in org-mode TAB doesn't work
 (setq evil-toggle-key "C-c m")
@@ -138,3 +141,22 @@
 
 ;; gradle
 (require 'gradle-mode)
+
+(add-to-list 'auto-mode-alist '("\\Jenkinsfile\\'" . groovy-mode))
+(add-hook 'groovy-mode-hook (lambda () (c-set-offset 'label 4)))
+
+;;go
+(setenv "GOPATH" "/Users/jinyu/code/golib")
+(defun auto-complete-for-go ()
+  (auto-complete-mode 1))
+(add-hook 'go-mode-hook 'auto-complete-for-go)
+(with-eval-after-load 'go-mode
+  (require 'go-guru)
+  (add-hook 'go-mode-hook #'go-guru-hl-identifier-mode)
+  (local-set-key (kbd "M-j") 'godef-jump)
+  (require 'go-autocomplete))
+
+
+;;yml or yaml
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))

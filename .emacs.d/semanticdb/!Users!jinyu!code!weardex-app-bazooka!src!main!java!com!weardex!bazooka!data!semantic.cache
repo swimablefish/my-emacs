@@ -1,0 +1,50 @@
+;; Object data/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "data/"
+  :tables
+  (list
+    (semanticdb-table "RedshiftDataSource.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.weardex.bazooka.data" package nil nil [1 34])
+            ("org.apache.tomcat.jdbc.pool.DataSource" include nil nil [36 82])
+            ("org.slf4j.Logger" include nil nil [83 107])
+            ("org.slf4j.LoggerFactory" include nil nil [108 139])
+            ("org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate" include nil nil [140 215])
+            ("RedshiftDataSource" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("log" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [295 379])
+                    ("dataSource" variable
+                       (:typemodifiers ("private")
+                        :type "DataSource")
+                        (reparse-symbol class_member_declaration) [384 414])
+                    ("jdbcTemplate" variable
+                       (:typemodifiers ("private")
+                        :type "NamedParameterJdbcTemplate")
+                        (reparse-symbol class_member_declaration) [419 467])
+                    ("getJdbcTemplate" function
+                       (:typemodifiers ("public")
+                        :type "NamedParameterJdbcTemplate")
+                        (reparse-symbol class_member_declaration) [473 559])
+                    ("RedshiftDataSource" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("jdbcurl" variable (:type "String") (reparse-symbol formal_parameters) [591 605])
+                            ("userName" variable (:type "String") (reparse-symbol formal_parameters) [607 622])
+                            ("password" variable (:type "String") (reparse-symbol formal_parameters) [624 639]))                          )
+                        (reparse-symbol class_member_declaration) [565 1280]))                  
+                :type "class")
+                nil [257 1282]))          
+      :file "RedshiftDataSource.java"
+      :pointmax 1283
+      :fsize 1282
+      :lastmodtime '(22218 50863 0 0)
+      :unmatched-syntax '((IDENTIFIER 1283 . 1285) (COLON 1282 . 1283))))
+  :file "!Users!jinyu!code!weardex-app-bazooka!src!main!java!com!weardex!bazooka!data!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
