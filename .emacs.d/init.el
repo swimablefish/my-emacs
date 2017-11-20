@@ -26,7 +26,14 @@
 (load-theme 'solarized t)
 
 (custom-set-variables
-  '(frame-background-mode 'dark))
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(frame-background-mode (quote dark))
+ '(package-selected-packages
+   (quote
+    (emamux yaml-mode which-key weibo twittering-mode solarized-theme smartparens scala-mode2 scala-mode scad-mode sbt-mode rainbow-delimiters rainbow-blocks org-pomodoro org-mobile-sync org-magit org-mac-link org-mac-iCal org-dropbox markdown-mode latex-preview-pane jinja2-mode jdee javadoc-lookup groovy-mode gradle-mode google-c-style go-stacktracer go-guru go-errcheck go-eldoc go-dlv go-direx go-autocomplete evil-tabs evil-swap-keys evil-surround evil-paredit evil-org evil-numbers evil-nerd-commenter evil-god-state evil-escape evil-commentary ein-mumamo csv-mode company-web company-go company-emoji company-cmake company-ansible company-anaconda color-theme cider-spy cider-profile cider-eval-sexp-fu cider-decompile auctex ahungry-theme 0blayout))))
 
 ;;line number
 (global-linum-mode 1)
@@ -174,3 +181,12 @@
 (define-key evil-visual-state-map (kbd ",/") 'evilnc-comment-or-uncomment-lines)
 
 (which-key-mode 1)
+
+;;ignore some noise error message
+(setq ad-redefinition-action 'accept)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
