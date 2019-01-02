@@ -16,7 +16,6 @@
 (global-auto-revert-mode 1)
 
 ;;use evil
-(setq evil-want-C-i-jump nil)  ;for in org-mode TAB doesn't work
 (setq evil-toggle-key "C-c m")
 (require 'evil)
 (evil-mode 1)
@@ -33,7 +32,7 @@
  '(frame-background-mode (quote dark))
  '(package-selected-packages
    (quote
-    (emamux yaml-mode which-key weibo twittering-mode solarized-theme smartparens scala-mode2 scala-mode scad-mode sbt-mode rainbow-delimiters rainbow-blocks org-pomodoro org-mobile-sync org-magit org-mac-link org-mac-iCal org-dropbox markdown-mode latex-preview-pane jinja2-mode jdee javadoc-lookup groovy-mode gradle-mode google-c-style go-stacktracer go-guru go-errcheck go-eldoc go-dlv go-direx go-autocomplete evil-tabs evil-swap-keys evil-surround evil-paredit evil-org evil-numbers evil-nerd-commenter evil-god-state evil-escape evil-commentary ein-mumamo csv-mode company-web company-go company-emoji company-cmake company-ansible company-anaconda color-theme cider-spy cider-profile cider-eval-sexp-fu cider-decompile auctex ahungry-theme 0blayout))))
+    (emamux yaml-mode which-key weibo twittering-mode solarized-theme smartparens scala-mode2 scala-mode scad-mode sbt-mode rainbow-delimiters rainbow-blocks markdown-mode latex-preview-pane jinja2-mode jdee javadoc-lookup groovy-mode gradle-mode google-c-style go-stacktracer go-guru go-errcheck go-eldoc go-dlv go-direx go-autocomplete evil-tabs evil-swap-keys evil-surround evil-paredit evil-numbers evil-nerd-commenter evil-god-state evil-escape evil-commentary ein-mumamo csv-mode company-web company-go company-emoji company-cmake company-ansible company-anaconda color-theme cider-spy cider-profile cider-eval-sexp-fu cider-decompile auctex ahungry-theme 0blayout))))
 
 ;;line number
 (global-linum-mode 1)
@@ -57,46 +56,6 @@
 (setq twittering-icon-mode t)
 (setq twittering-number-of-tweets-on-retrieval 100)
 
-;;org-mode
-(global-set-key (kbd "C-c l") 'org-store-link)
-(global-set-key (kbd "C-c a") 'org-agenda)
-(global-set-key (kbd "C-c c") 'org-capture)
-(global-set-key (kbd "C-c i") 'org-iswitchb)
-(setq org-agenda-files (list "~/Documents/org"))
-(setq org-startup-folded 0)
-(setq org-log-done 'time)
-
-(setq org-capture-templates
-  '(("t" "Todo" entry (file+headline "~/Documents/org/todo.org" "Tasks")
-    "* TODO %?\n %i\n")
-    ("j" "Journal" entry (file+datetree "~/Documents/org/journal.org")
-    "* %?\nEntered on %U\n %i\n %a")))
-
-(org-babel-do-load-languages
-  'org-babel-load-languages
-   '((python . t)
-     (sh . t)
-     (R . t)
-     (ruby . t)
-     (ditaa . t)
-     (dot . t)
-     (octave . t)
-     (sqlite . t)
-     (latex . t)
-     (clojure . t)
-     (perl . t)))
-
-;;org-pomodoro  
-;;play tick sound
-(setq org-pomodoro-ticking-sound-p t)
-
-;; Set to the location of your Org files on your local system
-(setq org-directory "~/Documents/org")
-;; Set to the name of the file where new notes will be stored
-(setq org-mobile-inbox-for-pull "~/Documents/org/todo.org")
-;; Set to <your Dropbox root directory>/MobileOrg.
-(setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
-
 (add-hook 'after-init-hook 'global-company-mode)
 (eval-after-load "company"
   '(progn
@@ -117,9 +76,6 @@
 
 ;;enable pgp
 (require 'epa-file)
-
-;;set picture width
-(setq org-image-actual-width '(300)) 
 
 ;; ipython notebook
 (require 'ein)
